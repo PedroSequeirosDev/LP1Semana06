@@ -13,4 +13,12 @@ namespace RandDice
             string seed = args[1];
             int seedConverted = int.Parse(seed);
 
-     
+            int totaldice = 0;
+
+            Random seedRandom = new Random(seedConverted);
+
+
+
+        }
+    }
+}
