@@ -22,6 +22,8 @@ namespace Chronos
             TimeSpan elapsed1 = crono1.Elapsed;
             TimeSpan elapsed2 = crono2.Elapsed;
 
+            Console.WriteLine($"Crono1: {elapsed1.TotalSeconds:f4} seconds");
+            Console.WriteLine($"Crono2: {elapsed2.TotalSeconds:f4} seconds");
 
 
         }
