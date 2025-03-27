@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace MyGame
 {
@@ -6,11 +7,12 @@ namespace MyGame
     {
         private static void Main(string[] args)
         {
-            Enemy loki = new Enemy("Loki");
+            string AmountofEnemies = args[0];
+            int EnemiesConverted = int.Parse(AmountofEnemies);
 
-            loki.SetName("Loki Laufeyson");
 
-            Console.WriteLine($"Name is {loki.GetName()} and HP is {loki.GetHealth()}");
+
+
 
         }
     }
