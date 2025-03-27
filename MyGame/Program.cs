@@ -12,6 +12,12 @@ namespace MyGame
 
             Enemy[] AllEnemies = new Enemy[EnemiesConverted];
 
+            for (int NumberofEnemies = 0; NumberofEnemies < EnemiesConverted; NumberofEnemies++)
+            {
+                Console.Write($"Nome do inimigo {NumberofEnemies + 1}: ");
+                AllEnemies[NumberofEnemies] = new Enemy(Console.ReadLine());
+            }
+
 
 
 
