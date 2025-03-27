@@ -41,6 +41,17 @@ namespace MyGame
             return shield;
         }
 
+        public string SetName(string CharName)
+        {
+            this.name = CharName;
 
+            int NameLength = CharName.Length;
+
+            if (NameLength > 8)
+            {
+                name = name.Substring(0, 8);
+            }
+            return name;
+        }
     }
 }
