@@ -10,6 +10,8 @@ namespace MyGame
             string AmountofEnemies = args[0];
             int EnemiesConverted = int.Parse(AmountofEnemies);
 
+            Enemy[] AllEnemies = new Enemy[EnemiesConverted];
+
 
 
 
