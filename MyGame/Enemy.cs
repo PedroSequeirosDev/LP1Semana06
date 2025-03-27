@@ -54,7 +54,7 @@ namespace MyGame
             return name;
         }
 
-        public void PickupPowerUp(PowerUp powerup, float Value)
+        internal void PickupPowerUp(PowerUp powerup, float Value)
         {
             if (powerup == PowerUp.Health)
             {

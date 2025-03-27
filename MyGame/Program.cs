@@ -20,7 +20,10 @@ namespace MyGame
 
             foreach (Enemy enemy in AllEnemies)
             {
+                enemy.TakeDamage(50);
+                enemy.PickupPowerUp(PowerUp.Shield, 50);
                 Console.WriteLine($"{enemy.GetName()} {enemy.GetHealth()} {enemy.GetShield()}");
+
 
             }
 
