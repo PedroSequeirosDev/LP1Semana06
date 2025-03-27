@@ -7,7 +7,7 @@ namespace MyGame
         private string name;
         private float health;
         private float shield;
-        private static int HowManyPowerUps;
+        internal static int HowManyPowerUps;
         public Enemy(string name)
         {
             this.name = SetName(name);
@@ -83,7 +83,7 @@ namespace MyGame
 
         }
 
-        internal static int GetHowManyPowerUps()
+        public static int GetHowManyPowerUps()
         {
             return HowManyPowerUps;
         }

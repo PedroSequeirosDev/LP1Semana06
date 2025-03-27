@@ -28,6 +28,8 @@ namespace MyGame
 
             }
 
+            Console.WriteLine($"Amount of PowerUps: {Enemy.HowManyPowerUps}");
+
 
 
         }
