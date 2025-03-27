@@ -6,7 +6,12 @@ namespace MyGame
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP1!");
+            Enemy loki = new Enemy("Loki");
+
+            loki.SetName("Loki Laufeyson");
+
+            Console.WriteLine($"Name is {loki.GetName()} and HP is {loki.GetHealth()}");
+
         }
     }
 }

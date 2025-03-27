@@ -9,7 +9,7 @@ namespace MyGame
         private float shield;
         public Enemy(string name)
         {
-            this.name = name;
+            this.name = SetName(name);
             health = 100;
             shield = 0;
         }
