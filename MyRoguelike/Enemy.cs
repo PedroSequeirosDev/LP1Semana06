@@ -1,4 +1,5 @@
 using System;
+using Humanizer;
 
 namespace MyRoguelike
 {
@@ -52,10 +53,6 @@ namespace MyRoguelike
 
             int NameLength = CharName.Length;
 
-            if (NameLength > 8)
-            {
-                name = name.Substring(0, 8);
-            }
             return name;
         }
 
@@ -89,53 +86,5 @@ namespace MyRoguelike
         }
 
     }
-    public class Level
-    {
-        private int NumberofRooms;
-        private Toughness Dificulty;
-
-        private int NumberofEnemies;
-
-        private Enemy[] EnemiesInRoom;
-
-        public Level(int NumberofRooms, Toughness Dificulty)
-        {
-            this.NumberofRooms = NumberofRooms;
-            this.Dificulty = Dificulty;
-            NumberofEnemies = 0;
-            EnemiesInRoom = new Enemy[NumberofRooms];
-        }
-
-        public void SetEnemyInRoom(int RoomIndex, Enemy enemy)
-        {
-            EnemiesInRoom[RoomIndex] = enemy;
-            NumberofEnemies += 1;
-        }
-
-        public int GetNumRooms()
-        {
-            return NumberofRooms;
-        }
-
-        public int GetNumEnemies()
-        {
-            return NumberofEnemies;
-        }
-
-        public Toughness GetToughness()
-        {
-            return Dificulty;
-        }
-
-        public void PrintEnemies()
-        {
-            for (int i = 0; i < NumberofRooms; i++)
-            {
-                if (EnemiesInRoom[i] != null)
-                {
-                    Console.WriteLine($"{i} room; {EnemiesInRoom[i].GetName()}");
-                }
-            }
-        }
-    }
+    
 }
